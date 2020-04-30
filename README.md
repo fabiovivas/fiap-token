@@ -1,18 +1,20 @@
-# Projeto desenvolvido como avaliação da disciplina: 
-# Ethereum Dapps and api Integration
+## Projeto desenvolvido como avaliação da disciplina: 
+## Ethereum Dapps and api Integration
 
-## 1. Nomes dos integrantes do grupo
+## 1. Integrantes
 ```
  Fabio Vivas       - RM 334142
  Renato Puga       - RM 333257
  Rodrigo Masson    - RM 334142
 ```
 
-## 2. Url para acessar o frontend do token
+## 2. Acessar o Frontend
+Url para acessar o frontend do token.
 
 * https://github.com/fabiovivas/fiap-token
 
-## 3. Instruções para compilar e executar o frontend localmente
+## 3. Compilação
+Instruções para compilar e executar o frontend localmente
 
 ```bash
 # clonar o repositorio
