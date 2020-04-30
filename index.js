@@ -81,6 +81,7 @@ function callMethod(abi) {
         document.getElementById(`${method.methodName}-value`).innerHTML = "fill in the fields"
     }
 
+    document.getElementById(`${method.methodName}-value`).innerHTML = 'Wait the transaction fineshed.'
     try {
         contract['methods'][`${method.methodName}`](...method.inputValues).call()
             .then(result => { document.getElementById(`${method.methodName}-value`).innerHTML = result })
