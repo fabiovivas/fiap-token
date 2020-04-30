@@ -13,9 +13,9 @@ Projeto desenvolvido como avaliação da disciplina Ethereum Dapps and API Integ
 * MetaMask: [MetaMask Chrome](https://chrome.google.com/webstore/detail/metamask/alfaaahkadkbgeoannfbpbpkoacfacjc/related?gclid=EAIaIQobChMIg5mg16iQ6QIVhQeRCh3J2QXfEAAYASAAEgKtlvD_BwE)
 * Selecione a **Ropsten Test Netowrk**
 
-## Demo on-line (gitpod)
+## Demo on-line 
 
-* https://3300-d5e5932b-9c5d-413f-b6af-703bbe436d7d.ws-us02.gitpod.io/
+* http://13.90.32.90:3300/
 
 ## Instalação Local
 Instruções para compilar e executar o frontend localmente
