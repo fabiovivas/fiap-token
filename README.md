@@ -11,7 +11,7 @@ Projeto desenvolvido como avaliação da disciplina Ethereum Dapps and API Integ
 ## Requerido
 
 * MetaMask: [MetaMask Chrome](https://chrome.google.com/webstore/detail/metamask/alfaaahkadkbgeoannfbpbpkoacfacjc/related?gclid=EAIaIQobChMIg5mg16iQ6QIVhQeRCh3J2QXfEAAYASAAEgKtlvD_BwE)
-* Selecione a **Ropsten Test Netowrk**
+* Selecione a **Ropsten Test Network**
 
 ## Demo on-line 
 
@@ -34,7 +34,7 @@ node server
 http://localhost:3300/
 ```
 
-## Screenshots
+## Screen shots
 
 * Write
 ![Write](ss-write.png)
