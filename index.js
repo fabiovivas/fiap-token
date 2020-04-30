@@ -87,7 +87,7 @@ function callMethod(abi) {
             .then(result => { document.getElementById(`${method.methodName}-value`).innerHTML = result })
             .catch(error => { document.getElementById(`${method.methodName}-value`).innerHTML = error.message })
     } catch (error) {
-        document.getElementById(`${methodName}-value`).innerHTML = error.message
+        document.getElementById(`${method.methodName}-value`).innerHTML = error.message
     }
 
 }
