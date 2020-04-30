@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FIAP TOKEN</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="./index.css" rel="stylesheet" id="bootstrap-css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+  <script src="./index.js"></script>
+</head>
+
+<body>
+  <section class="container py-4">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>FIAP TOKEN</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h2 id="contract-name"></h2>
+        <ul id="tabs" class="nav nav-tabs">
+          <li class="nav-item"><a href="" data-target="#write-contract" data-toggle="tab"
+              class="nav-link small text-uppercase active">Write</a></li>
+          <li class="nav-item"><a href="" data-target="#read-contract" data-toggle="tab"
+              class="nav-link small text-uppercase">Read</a></li>
+        </ul>
+        <br>
+        <div id="tabsContent" class="tab-content">
+          <div id="write-contract" class="tab-pane fade  active show">
+            <div class="row" id="write"></div>
+          </div>
+          <div id="read-contract" class="tab-pane fade">
+            <div class="row" id="read"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+
+</html>
