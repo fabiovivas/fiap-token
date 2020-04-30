@@ -9,8 +9,8 @@ Rodrigo Masson    - RM 334142
 https://github.com/fabiovivas/fiap-token
 
 3. Instruções para compilar e executar o frontend localmente
-a. git clone  https://github.com/fabiovivas/fiap-token.git
-b. npm install
-c. node server
-d. acessar http://localhost:3300/
+. git clone  https://github.com/fabiovivas/fiap-token.git
+. npm install
+. node server
+. acessar http://localhost:3300/
 
