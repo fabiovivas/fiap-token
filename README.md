@@ -34,7 +34,7 @@ node server
 http://localhost:3300/
 ```
 
-## Screenshots
+## Screen shots
 
 * Write
 ![Write](ss-write.png)
