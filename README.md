@@ -1,5 +1,5 @@
-## Projeto desenvolvido como avaliação da disciplina: 
-## Ethereum Dapps and api Integration
+## Projeto Fiap-Token
+Desenvolvido como avaliação da disciplina: Ethereum Dapps and api Integration
 
 ## 1. Integrantes
 ```
