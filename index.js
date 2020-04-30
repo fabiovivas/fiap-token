@@ -13,21 +13,24 @@ else {
     window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
 }
 
-web3.eth.getAccounts(function (err, accounts) {
-    if (err != null) {
-        alert("Ocorreu um erro ao buscar suas contas.");
-        return;
-    }
+getAccounts = async () => {
+    await web3.eth.getAccounts(function (err, accounts) {
+        if (err != null) {
+            alert("Ocorreu um erro ao buscar suas contas.");
+            return;
+        }
 
-    if (accounts.length == 0) {
-        alert("Nenhuma conta encontrada! Verifique se o Ethereum client está configurado corretamente.");
-        return;
-    }
+        if (accounts.length == 0) {
+            alert("Nenhuma conta encontrada! Verifique se o Ethereum client está configurado corretamente.");
+            return;
+        }
 
-    account = accounts[0];
-    web3.eth.defaultAccount = account;
-    console.log('account', account)
-});
+        account = accounts[0];
+        web3.eth.defaultAccount = account;
+        console.log('account', account)
+    });
+    return account
+}
 
 var contract = new web3.eth.Contract(abi, contractAddress);
 console.log('Contract: ' + contract.options.address);
@@ -74,7 +77,7 @@ function mountMethods(abi, methodName, renderElement) {
 
 function callMethod(abi) {
     const method = prepareMethods(abi)
-    if(this.hasInputValuesNotFilled(abi)) {
+    if (this.hasInputValuesNotFilled(abi)) {
         document.getElementById(`${method.methodName}-value`).innerHTML = "fill in the fields"
     }
 
@@ -90,7 +93,7 @@ function callMethod(abi) {
 
 function sendMethod(abi) {
     const method = prepareMethods(abi)
-    if(this.hasInputValuesNotFilled(abi)) {
+    if (this.hasInputValuesNotFilled(abi)) {
         document.getElementById(`${method.methodName}-value`).innerHTML = "fill in the fields"
     }
 
@@ -127,7 +130,7 @@ function hasInputValuesNotFilled(abi) {
     if (elements) {
         const inputs = document.getElementById(`${methodName}-inputs`).querySelectorAll('input')
         inputs.forEach(x => {
-            if(x.value === "" || x.value === null || x.value === undefined){
+            if (x.value === "" || x.value === null || x.value === undefined) {
                 hasNullValues = true
             }
         })
@@ -135,7 +138,13 @@ function hasInputValuesNotFilled(abi) {
     return hasNullValues
 }
 
-window.onload = function () {
-    this.mountMethods(this.outputsArray, 'sendMethod', 'write')
-    this.mountMethods(this.inputsArray, 'callMethod', 'read')
+window.onload = async () => {
+    const result = await this.getAccounts()
+    if (!result) {
+        document.getElementById("main").innerHTML = ""
+        document.getElementById("message").innerHTML = "<h2>reload the page when the contract is loaded</h2>"
+    } else {
+        this.mountMethods(this.outputsArray, 'sendMethod', 'write')
+        this.mountMethods(this.inputsArray, 'callMethod', 'read')
+    }
 };
