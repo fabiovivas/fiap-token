@@ -6,6 +6,7 @@ Projeto desenvolvido como avaliação da disciplina Ethereum Dapps and API Integ
  Fabio Vivas
  Renato Puga
  Rodrigo Masson
+ Eduardo Salvatore
 ```
 
 ## Requerido
